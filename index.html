@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Control Demo</title>
+    <style>
+        .color-changed {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, Version Control!</h1>
+    <p>This is a simple HTML file to demonstrate version control using GitHub.</p>
+    <p>Follow these steps to use version control:</p>
+    <ol>
+        <li>Initialize a Git repository: <code>git init</code></li>
+        <li>Add files to the staging area: <code>git add .</code></li>
+        <li>Commit changes: <code>git commit -m "Initial commit"</code></li>
+        <li>Create a GitHub repository and add it as a remote: <code>git remote add origin https://github.com/yourusername/your-repo-name.git</code></li>
+        <li>Push changes to GitHub: <code>git push -u origin master</code></li>
+    </ol>
+    <button id="colorButton">Click me to change color</button>
+    <script>
+        document.getElementById('colorButton').addEventListener('click', function() {
+            this.classList.toggle('color-changed');
+        });
+    </script>
+</body>
+</html>
